@@ -1,0 +1,103 @@
+html {
+    font-size: 20px;
+}
+
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(63,1,78,1) 75%);
+    padding: 1rem;
+    color: whitesmoke;
+    font-family: "Ubuntu Mono", serif;
+}
+
+h1 {
+    color: whitesmoke;
+    margin-top: 3rem;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+header h1 {
+    font-size: 1.777rem;
+}
+
+h2 {
+    font-size: 3.157rem;
+    color: #279c27;
+}
+
+h3 {
+    font-size: 1.333rem;
+}
+
+p {
+    max-width: 58ch;
+}
+
+a.nav-link {
+    color: #279c27;
+    text-decoration: none;
+}
+
+a.nav-link:hover > span,
+a.nav-link:active > span {
+    color: #279c27;
+    text-decoration: underline;
+}
+
+a.nav-link:hover,
+a.nav-link:active {
+    transform: scale(1.2);
+    transition: 2s;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.project {
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    margin-top: 2rem;
+}
+
+.project div {
+    width: 100%;
+    height: 275px;
+    background: 
+    repeating-radial-gradient(#000 0 0.0001%,#fff 0 0.0002%) 50% 0/2500px 2500px,
+    repeating-conic-gradient(#000 0 0.0001%,#fff 0 0.0002%) 60% 60%/2500px 2500px;
+    background-blend-mode: difference;
+    animation: b .2s infinite alternate;
+}
+
+.project h3 {
+    margin: -1rem 0 -1rem 0;
+    border-bottom: 4px solid #000;
+}
+
+@keyframes b{
+  100% {background-position: 50% 0, 60% 50%}
+}
+
+.project h3,
+.project p {
+    padding: .5rem;
+}
+
+footer {
+    margin-top: 2rem;
+}
+
+
+
+
