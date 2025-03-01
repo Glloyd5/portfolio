@@ -4,7 +4,8 @@ html {
 
 body {
     background: rgb(2,0,36);
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(63,1,78,1) 75%);
+    background-image:  linear-gradient(rgba(63,1,78,1) 1px, transparent 1px), linear-gradient(to right, rgb(39, 4, 48) 1px, rgba(2,0,36,1) 1px);
+    background-size: 50px 50px;
     color: whitesmoke;
     font-family: "Ubuntu Mono", serif;
 }
@@ -23,15 +24,25 @@ nav {
 
 main {
     margin: 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 main section:first-of-type {
     max-width: 628px;
 }
 
+main section:first-of-type h2 {
+    font-size: 3.157rem;
+    color: #ffffff;
+    text-shadow: 0 0 5px #1eff00, 0 0 10px #1eff00, 0 0 20px #1eff00, 0 0 40px #1eff00;
+    animation: neon 3s infinite;
+}
+
 header h1 {
     font-size: 1.777rem;
 }
+
 
 h2 {
     font-size: 3.157rem;
@@ -102,8 +113,8 @@ section {
     border-bottom: 4px solid whitesmoke;
 }
 
-@keyframes b{
-  100% {background-position: 50% 0, 60% 50%}
+.project {
+    background-color: #000000;
 }
 
 .project h3,
@@ -116,6 +127,20 @@ footer {
     padding: 1rem;
     background-color: #000000;
 }
+
+@keyframes b{
+  100% {background-position: 50% 0, 60% 50%}
+}
+
+@keyframes neon {
+    0% {
+        text-shadow: 0 0 5px #1eff00, 0 0 10px #1eff00, 0 0 20px #1eff00, 0 0 40px #1eff00,;
+    }
+    100% {
+        text-shadow: 0 0 5px #00d4ff, 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #00d4ff;
+    }
+}
+
 
 @media (min-width: 960px) {
     .projects {
