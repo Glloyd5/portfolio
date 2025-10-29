@@ -11,4 +11,6 @@ function flicker() {
 
 }
 
-setInterval(flicker, 100);
+if (light) {
+    setInterval(flicker, 100);
+} 
