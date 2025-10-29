@@ -1,0 +1,182 @@
+/* General Site Styles */
+.container {
+    margin: 0 auto;
+    max-width: 90vw;
+}
+
+body {
+    background-color: #010307ff;
+}
+
+/* Header Hero Section Stlyes */
+.header-hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    aspect-ratio: 6 / 9;
+}
+
+#hero-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.billboard {
+    position: absolute;
+    width: 80%;
+    aspect-ratio: 4 / 5;
+    /* Billboard svg native ratio */
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.billboard img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+
+.billboard-content {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    gap: 1vw;
+    font-size: 4vw;
+    color: white;
+}
+
+.billboard-content>div {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.light {
+    position: absolute;
+    width: 10vw;
+    height: 25vh;
+    border-radius: 50% / 50%;
+    background: radial-gradient(ellipse at top,
+            rgba(255, 255, 200, 0.5) 0%,
+            rgba(255, 255, 200, 0) 80%);
+    filter: blur(30px);
+    pointer-events: none;
+    transform: rotate(0deg);
+}
+
+#light1 {
+    left: 8%;
+    top: 8%;
+}
+
+#light2 {
+    left: 42%;
+    top: 8%;
+}
+
+#light3 {
+    left: 77%;
+    top: 8%;
+}
+
+
+/* MEDIA QUERIES */
+
+/* 515px+ */
+@media (min-width: 515px) {
+    .header-hero {
+        padding-top: 20%;
+    }
+
+    .billboard {
+        width: 70%;
+        top: 15%;
+    }
+
+}
+
+/* 640px+ */
+@media (min-width: 640px) {
+    .header-hero {
+        padding-top: 20%;
+    }
+
+    .billboard {
+        width: 60%;
+        top: 3%;
+    }
+
+    .billboard-content {
+        font-size: 3vw;
+    }
+}
+
+/* 768px+ */
+@media (min-width: 768px) {
+    .billboard {
+        width: 50%;
+    }
+
+    #light1 {
+        left: 5%;
+    }
+
+    #light2 {
+        left: 40%;
+    }
+
+    #light3 {
+        left: 75%;
+    }
+}
+
+/* 1024px+ */
+@media (min-width: 1024px) {
+    .light {
+        height: 30vh;
+    }
+}
+
+/* 1280px+ */
+@media (min-width: 1280px) {
+    .header-hero {
+        padding-top: 30%;
+    }
+
+    .billboard {
+        width: 40%;
+    }
+
+    .billboard-content {
+        font-size: 2vw;
+    }
+
+    #light1 {
+        left: 3%;
+    }
+
+    #light2 {
+        left: 37%;
+    }
+
+    #light3 {
+        left: 72%;
+    }
+}
+
+/* 1536px+ */
+@media (min-width: 1536px) {
+    .billboard {}
+}
+
+/* 1700px+ */
+@media (min-width: 1536px) {
+    .light {
+        height: 40vh;
+    }
+}
