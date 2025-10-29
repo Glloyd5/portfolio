@@ -2,7 +2,7 @@ const light = document.querySelector('#light3');
 
 function flicker() {
 
-        const opacity = 0.3 + Math.random() * 0.2; // 0.4 → 0.6
+        const opacity = 0.2 + Math.random() * 0.2;
         light.style.background = `radial-gradient(
         ellipse at top,
         rgba(255,255,200,${opacity}) 0%,
