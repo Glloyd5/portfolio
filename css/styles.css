@@ -6,15 +6,29 @@
     --purple: #926FB9;
     --orange: #B75F27;
     --turquoise: #7EDEC0;
+    --background: #010307ff
+}
+
+.green {
+    background-color: var(--green);
+}
+
+.purple {
+    background-color: var(--purple);
+}
+
+.orange {
+    background-color: var(--orange);
 }
 
 .container {
     margin: 0 auto;
     max-width: 1440px;
+    padding: 2rem 2rem 2rem 2rem;
 }
 
 body {
-    background-color: #010307ff;
+    background-color: var(--background);
     font-family: "Ubuntu Mono", monospace;
     color: #fff;
     font-size: 1.5rem;
@@ -36,42 +50,6 @@ footer {
     text-decoration: none;
 }
 
-/* About me styles */
-
-body.about-me {
-    background-image: url('../img/about-me.svg');
-    background-size: cover;
-    margin: 0;
-    min-height: 100vh;
-}
-
-.about-content {
-    max-width: 65ch;
-    padding: 2rem;
-    border-radius: 30px;
-}
-
-div.about-content:first-of-type  {
-    background-color: #926FB9;
-}
-
-main > .container {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding-top: 2rem;
-}
-
-main > .container div:first-of-type {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-main > .container div:first-of-type img {
-    border-radius: 50%;
-}
-
 @font-face {
     font-family: "UbuntuMono";
     src:
@@ -90,7 +68,7 @@ h4 {
 
 }
 
-/* Header Hero Section Stlyes */
+/* Landing page Stlyes */
 .header-hero {
     position: relative;
     width: 100vw;
@@ -170,6 +148,54 @@ h4 {
 #light3 {
     left: 77%;
     top: 8%;
+}
+
+/* About me styles */
+.about-me > main {
+    margin-top: 22rem;
+}
+
+body.about-me {
+    background-image: url('../img/about-me.svg');
+    background-size: cover;
+    margin: 0;
+    
+}
+
+.about-content {
+    max-width: 65ch;
+    padding: 2rem;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+div.about-content:first-of-type  {
+    background-color: #926FB9;
+}
+
+main > .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+main > .container div:first-of-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+main > .container div:first-of-type img {
+    border-radius: 50%;
+    max-width: 40%;
+}
+
+/* Project styles */
+.projects {
+    background-image: url('../img/projects-header.svg');
+    background-size: contain;
+    height: 22.2rem;
 }
 
 /* Top Navigation other pages */
@@ -264,10 +290,6 @@ h4 {
     transform: scale(1.05);
 }
 
-/* About me page */
-.about-me > main {
-    margin-top: 28rem;
-}
 
 /* MEDIA QUERIES */
 
@@ -298,6 +320,10 @@ h4 {
     .billboard-content {
         font-size: 3vw;
     }
+
+    .about-me > main {
+        margin-top: 18rem;
+    }
 }
 
 /* 768px+ */
@@ -321,6 +347,10 @@ h4 {
     .top-nav ul {
         justify-content: unset;
         flex-wrap: nowrap;
+    }
+
+        .about-me > main {
+        margin-top: 8rem;
     }
 
 }
